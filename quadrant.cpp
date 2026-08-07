@@ -9,15 +9,15 @@ int main(){
     cin>>x>>y;
     if(x>0){
         if(y>0)
-            cout<<1;
+            {cout<<1;}
         else
-            cout<<4;
+            {cout<<4;}
     }
     else{
         if(y>0)
-            cout<<2;
+           { cout<<2;}
         else
-            cout<<3;
+           { cout<<3;}
     }
 
 }
