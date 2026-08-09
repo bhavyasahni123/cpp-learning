@@ -10,10 +10,16 @@ Output: Print the time 45 minutes earlier than the input time.
 using namespace std;
 int main(){
     int H,M;
-    int H1, M1;
     cin >>H>>M;
-    int T1=H*60+M-45;
-    H1=T1/60;
-    M1=T1%60;
-    cout <<H1<<" "<<M1<<endl;
+    M-=45;
+    if (M<0){
+        M+=60;
+        H-=1;
+       
+       
+    }
+    if (H<0){
+        H=23;;
+    }
+    cout<<H<<" " <<M;
 }
